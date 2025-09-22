@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     <title>Test Website</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -75,6 +75,27 @@
             <p>&copy; 2024 Test Website. All rights reserved.</p>
         </div>
     </footer>
+
+    <script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+
+			embeddedservice_bootstrap.init(
+				'00DgK00000BRKsL',
+				'Messaging_Channel',
+				'https://orgfarm-0668a24795-dev-ed.develop.my.site.com/ESWMessagingChannel1758541058702',
+				{
+					scrt2URL: 'https://orgfarm-0668a24795-dev-ed.develop.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://orgfarm-0668a24795-dev-ed.develop.my.site.com/ESWMessagingChannel1758541058702/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+
 
     <script src="https://ontic-in.github.io/realfast-chat-widget/dist/realfast-chat-widget.js"></script>
 <script type="module">
