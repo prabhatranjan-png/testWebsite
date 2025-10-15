@@ -4,264 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Get in Touch</title>
-    <style>
-        /* Reset & Base Styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    <title>Contact Us - RealFast.ai</title>
 
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            line-height: 1.6;
-            color: #1a1a1a;
-            background: #f8f9fa;
-            padding: 20px;
-            min-height: 100vh;
-        }
-
-        .form-container {
-            max-width: 800px;
-            margin: 40px auto;
-            background: #ffffff;
-            border-radius: 8px;
-            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
-            overflow: hidden;
-            animation: fadeIn 0.6s ease-in;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(-20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .form-header {
-            background: #ffffff;
-            color: #1a1a1a;
-            padding: 40px 30px 30px;
-            text-align: center;
-            border-bottom: 1px solid #e9ecef;
-        }
-
-        .form-header h1 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 10px;
-            color: #1a1a1a;
-        }
-
-        .form-header p {
-            font-size: 1.05rem;
-            color: #6c757d;
-            font-weight: 400;
-        }
-
-        #web-to-lead-form {
-            padding: 40px 30px;
-        }
-
-        .form-section {
-            margin-bottom: 35px;
-            padding-bottom: 30px;
-            border-bottom: 1px solid #e9ecef;
-        }
-
-        .form-section:last-of-type {
-            border-bottom: none;
-            margin-bottom: 20px;
-        }
-
-        .section-title {
-            font-size: 1.4rem;
-            font-weight: 600;
-            color: #1a1a1a;
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid #dc3545;
-        }
-
-        .form-row {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-            margin-bottom: 20px;
-        }
-
-        .form-row:last-child {
-            margin-bottom: 0;
-        }
-
-        .form-group {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .form-group-full {
-            grid-column: 1 / -1;
-        }
-
-        label {
-            font-size: 0.9rem;
-            font-weight: 500;
-            color: #495057;
-            margin-bottom: 8px;
-            display: block;
-        }
-
-        .required {
-            color: #dc3545;
-            font-weight: 700;
-        }
-
-        input[type="text"],
-        input[type="email"],
-        input[type="tel"],
-        select,
-        textarea {
-            width: 100%;
-            padding: 12px 16px;
-            font-size: 0.95rem;
-            font-family: inherit;
-            border: 1px solid #ced4da;
-            border-radius: 6px;
-            background-color: #ffffff;
-            transition: all 0.2s ease;
-            outline: none;
-            color: #495057;
-        }
-
-        input:focus,
-        select:focus,
-        textarea:focus {
-            border-color: #dc3545;
-            box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.1);
-        }
-
-        input:hover,
-        select:hover,
-        textarea:hover {
-            border-color: #adb5bd;
-        }
-
-        textarea {
-            resize: vertical;
-            min-height: 80px;
-            line-height: 1.5;
-        }
-
-        select {
-            appearance: none;
-            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
-            background-repeat: no-repeat;
-            background-position: right 12px center;
-            background-size: 20px;
-            padding-right: 40px;
-            cursor: pointer;
-        }
-
-        .form-actions {
-            margin-top: 30px;
-            text-align: center;
-        }
-
-        .btn-submit {
-            background: #dc3545;
-            color: #ffffff;
-            font-size: 1rem;
-            font-weight: 600;
-            padding: 14px 48px;
-            border: none;
-            border-radius: 6px;
-            cursor: pointer;
-            transition: all 0.2s ease;
-            box-shadow: 0 2px 8px rgba(220, 53, 69, 0.2);
-            text-transform: none;
-            letter-spacing: 0.3px;
-        }
-
-        .btn-submit:hover {
-            background: #c82333;
-            transform: translateY(-1px);
-            box-shadow: 0 4px 12px rgba(220, 53, 69, 0.3);
-        }
-
-        .btn-submit:active {
-            transform: translateY(0);
-            box-shadow: 0 2px 6px rgba(220, 53, 69, 0.2);
-        }
-
-        .form-footer-text {
-            text-align: center;
-            color: #6c757d;
-            font-size: 0.85rem;
-            margin-top: 20px;
-        }
-
-        .form-footer-text a {
-            color: #dc3545;
-            text-decoration: none;
-        }
-
-        .form-footer-text a:hover {
-            color: #c82333;
-            text-decoration: underline;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            body {
-                padding: 10px;
-            }
-
-            .form-container {
-                margin: 20px auto;
-            }
-
-            .form-header h1 {
-                font-size: 2rem;
-            }
-
-            .form-header p {
-                font-size: 1rem;
-            }
-
-            #web-to-lead-form {
-                padding: 30px 20px;
-            }
-
-            .form-row {
-                grid-template-columns: 1fr;
-                gap: 15px;
-            }
-
-            .btn-submit {
-                width: 100%;
-                padding: 14px 40px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .form-header h1 {
-                font-size: 1.75rem;
-            }
-
-            input[type="text"],
-            input[type="email"],
-            input[type="tel"],
-            select,
-            textarea {
-                font-size: 16px; /* Prevents zoom on iOS */
-            }
-        }
-    </style>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="realfast-form.css">
 </head>
 <body>
     <div class="form-container">
@@ -284,6 +30,9 @@
             <!-- <input type="hidden" name="debug" value="1"> -->
             <!-- <input type="hidden" name="debugEmail" value="bharat@realfast.ai"> -->
 
+            <!-- Success/Error Messages -->
+            <div id="form-messages" class="form-messages" style="display: none;"></div>
+
             <!-- Personal Information Section -->
             <div class="form-section">
                 <h2 class="section-title">Personal Information</h2>
@@ -295,11 +44,12 @@
                         </label>
                         <input
                             type="text"
-                            id="FirstName"
+                            id="first_name"
                             name="first_name"
                             maxlength="40"
                             required
                             placeholder="John">
+                        <span class="error-message"></span>
                     </div>
 
                     <div class="form-group">
@@ -308,11 +58,12 @@
                         </label>
                         <input
                             type="text"
-                            id="LastName"
+                            id="last_name"
                             name="last_name"
                             maxlength="80"
                             required
                             placeholder="Doe">
+                        <span class="error-message"></span>
                     </div>
                 </div>
 
@@ -323,21 +74,23 @@
                         </label>
                         <input
                             type="email"
-                            id="Email"
+                            id="email"
                             name="email"
                             maxlength="80"
                             required
                             placeholder="john.doe@example.com">
+                        <span class="error-message"></span>
                     </div>
 
                     <div class="form-group">
                         <label for="phone">Phone</label>
                         <input
                             type="tel"
-                            id="Phone"
+                            id="phone"
                             name="phone"
                             maxlength="40"
                             placeholder="+1 (555) 123-4567">
+                        <span class="error-message"></span>
                     </div>
                 </div>
 
@@ -346,10 +99,11 @@
                         <label for="mobile">Mobile</label>
                         <input
                             type="tel"
-                            id="MobilePhone"
+                            id="mobile"
                             name="mobile"
                             maxlength="40"
                             placeholder="+1 (555) 987-6543">
+                        <span class="error-message"></span>
                     </div>
 
                     <div class="form-group">
@@ -369,11 +123,12 @@
                         </label>
                         <input
                             type="text"
-                            id="Company"
+                            id="company"
                             name="company"
                             maxlength="40"
                             required
                             placeholder="Acme Corporation">
+                        <span class="error-message"></span>
                     </div>
                 </div>
 
@@ -382,15 +137,16 @@
                         <label for="url">Website</label>
                         <input
                             type="text"
-                            id="Website"
+                            id="url"
                             name="url"
                             maxlength="80"
                             placeholder="https://www.example.com">
+                        <span class="error-message"></span>
                     </div>
 
                     <div class="form-group">
                         <label for="industry">Industry</label>
-                        <select id="Industry" name="industry">
+                        <select id="industry" name="industry">
                             <option value="">--None--</option>
                             <option value="Agriculture">Agriculture</option>
                             <option value="Apparel">Apparel</option>
@@ -435,7 +191,7 @@
                         <label for="employees">Number of Employees</label>
                         <input
                             type="text"
-                            id="NumberOfEmployees"
+                            id="employees"
                             name="employees"
                             maxlength="20"
                             placeholder="e.g., 50">
@@ -445,7 +201,7 @@
                         <label for="revenue">Annual Revenue</label>
                         <input
                             type="text"
-                            id="AnnualRevenue"
+                            id="revenue"
                             name="revenue"
                             maxlength="20"
                             placeholder="e.g., $1M - $5M">
@@ -520,7 +276,7 @@
                 <div class="form-row">
                     <div class="form-group form-group-full">
                         <label for="lead_source">How did you hear about us?</label>
-                        <select id="LeadSource" name="lead_source">
+                        <select id="lead_source" name="lead_source">
                             <option value="">--None--</option>
                             <option value="Employee Referral">Employee Referral</option>
                             <option value="Investor Referral">Investor Referral</option>
@@ -550,7 +306,7 @@
                     <div class="form-group form-group-full">
                         <label for="description">Message / Additional Information</label>
                         <textarea
-                            id="Description"
+                            id="description"
                             name="description"
                             rows="5"
                             placeholder="Tell us about your project, goals, or questions..."></textarea>
@@ -560,17 +316,25 @@
 
             <!-- Submit Button -->
             <div class="form-actions">
-                <button type="submit" class="btn-submit">Submit</button>
+                <button type="submit" class="btn-submit">
+                    <span class="btn-text">Submit</span>
+                    <span class="btn-loader">
+                        <span class="spinner"></span> Submitting...
+                    </span>
+                </button>
             </div>
 
             <p class="form-footer-text">
                 <small>
                     By submitting this form, you agree to our
                     <a href="/terms" target="_blank">Terms of Service</a> and
-                    <a href="https://www.realfast.ai/privacy" target="_blank">Privacy Policy</a>.
+                    <a href="/privacy-policy" target="_blank">Privacy Policy</a>.
                 </small>
             </p>
         </form>
     </div>
+
+    <!-- External JavaScript -->
+    <script src="realfast-form.js"></script>
 </body>
 </html>
